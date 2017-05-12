@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CookItYourself</string>
+    <string name="test_data">If there is anyone out there who still doubts that America is a place where all things are possible...who still questions the power of our democracy, tonight is your answer," he told crowds in Chicago in 2008 after winning the election. The president acted presidential even behind closed doors: even his closest aides fail to recall moments when Mr Obama gave way to roiling anger. Emotions have rarely muddled the academic rigor of his mind. White House staffers have nicknamed him the 'Colombo president', after the famous television detective who always catches the killer with his questions.</string>
+    <string name="facebook_app_id">384291378608471</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">9b9957d84db76a189183a775a3cd3f52</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_second">Second Activity</string>
+    <string name="toast_track_exception">Exception is recorded. Check the Crashes and Exceptions on Google Dashboard!</string>
+    <string name="toast_app_crash">The app will crash now! Check the Crashes and Exceptions on Google Dashboard!</string>
+    <string name="fragment_footer">Fragment is loaded! Check the screen view on Google Analytics Dashboard.</string>
+    <string name="msg_instructions">Click on each button to see the appropriate tracking on Google Analytics</string>
+    <string name="btn_second_screen">Second Screen</string>
+    <string name="btn_send_event">Track Event</string>
+    <string name="btn_exception_tracking">Track Exception</string>
+    <string name="btn_app_crash">Track App Crash</string>
+    <string name="btn_load_fragment">Fragment Tracking</string>
+</resources>

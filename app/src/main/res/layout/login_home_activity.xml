@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:htext="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:id="@+id/text1"
+                android:text="Bored with"
+                android:gravity="center"
+                android:textColor="#03A9F4"
+                android:textSize="30dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:id="@+id/text2"
+                android:text=" Newspaper"
+                android:gravity="center"
+                android:textColor="#03A9F4"
+                android:textSize="30dp" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/logo"
+            android:visibility="gone"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"/>
+        <com.hanks.htextview.HTextView
+            android:id="@+id/info_text"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Bored with Newspaper"
+            android:layout_marginTop="40dp"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:textColor="#03A9F4"
+            android:textSize="30sp"
+            htext:animateType="anvil"/>
+    </FrameLayout>
+    <com.hanks.htextview.HTextView
+        android:id="@+id/info_name"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:textColor="#03A9F4"
+        android:textSize="30sp"
+        htext:animateType="anvil"/>
+
+        <com.google.android.gms.common.SignInButton
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:id="@+id/sign_in_button"
+            android:layout_gravity="center_horizontal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="horizontal">
+      <com.facebook.login.widget.LoginButton
+          android:id="@+id/login_button"
+          android:layout_width="match_parent"
+          android:visibility="gone"
+          android:layout_marginLeft="35dp"
+          android:layout_marginRight="35dp"
+          android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

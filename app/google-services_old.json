@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "272058898159",
+    "firebase_url": "https://myepaper-c8d0e.firebaseio.com",
+    "project_id": "myepaper-c8d0e",
+    "storage_bucket": "myepaper-c8d0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272058898159:android:cbccfeb92692b99e",
+        "android_client_info": {
+          "package_name": "com.curl.akashchandra.curl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "272058898159-uijq1isgbc0gh3vhp2ctsf80sjs2qrdh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqdN_hwkbO4-zWCKmNpFCWkd3KgmdX5Vk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "272058898159-uijq1isgbc0gh3vhp2ctsf80sjs2qrdh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "379219292579",
+    "firebase_url": "https://cook-it-yourself.firebaseio.com",
+    "project_id": "cook-it-yourself",
+    "storage_bucket": "cook-it-yourself.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379219292579:android:9234bef46675fe9c",
+        "android_client_info": {
+          "package_name": "com.curl.ciykit.curl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "379219292579-kbpft8m2m63hl8cavlle6nlv9v6g40it.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP6SDeCyHa8zIr_NAwqqeg9YrPnXhC34Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

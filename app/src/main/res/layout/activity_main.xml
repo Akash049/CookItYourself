@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="256dp"
+        android:layout_height="186dp"
+        android:background="@drawable/bg4"
+        android:gravity="center"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/news_head_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="bottom"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_marginLeft="220dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/speak"
+                    android:tint="#ffffff"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="256dp"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:paddingTop="3dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/head"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Barack Obamas farewell speech: Gratitude viligance and grace mark POTUS swansong"
+            android:textColor="#262626"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="256dp"
+        android:layout_height="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:weightSum="1"
+        android:background="@color/white"
+        android:layout_weight="0.08">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:textSize="10dp"
+            android:textColor="#000000"
+            android:id="@+id/category"
+            android:text="Veg/Non-Veg etc."
+            android:gravity="start"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:gravity="end"
+            android:text="Wednesday, 12 Jan 2017"
+            android:textColor="#000000"
+            android:textSize="8dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="256dp"
+        android:layout_height="190dp"
+        android:padding="10dp"
+        android:textColor="#262626"
+        android:id="@+id/news_data"
+        android:textSize="11dp"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/test_data"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="256dp"
+        android:layout_height="25dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="9dp"
+            android:padding="5dp"
+            android:id="@+id/source"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="The Times of India"
+            android:background="@drawable/source_back"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></View>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:id="@+id/home"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+    <!-- FRAME 1 for Loader-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/hider"
+        android:background="@color/book_loading_book"
+        android:visibility="visible"
+        android:gravity="center">
+        <com.victor.loading.book.BookLoading
+            android:id="@+id/bookloading"
+            android:layout_width="150dp"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+
+    <!-- FRAME 2 for NewsBook-->
+    <com.curl.ciykit.curl.curl.CurlView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:id="@+id/curl" />
+
+
+    <!-- FRAME 3 for FAB Menu-->
+    <terranovaproductions.newcomicreader.FloatingActionMenu
+        android:id="@+id/option_menu"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp">
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/option"
+            android:clickable="true"
+            android:layout_marginBottom="100dp"
+            fab:fabSize="normal"
+            fab:backgroundTint="#3EAEED"/>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Hello World1"
+            android:src="@drawable/nlike"
+            android:tint="#ffffff"
+            fab:fabSize="mini"
+            fab:backgroundTint="@color/book_loading_book"/>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nbookmark"
+            android:contentDescription="Hello World2"
+            android:id="@+id/bookmark"
+            android:tint="#ffffff"
+            fab:fabSize="mini"
+            fab:backgroundTint="@color/book_loading_book"/>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nlarge"
+            android:id="@+id/size"
+            android:contentDescription="Hello World2"
+            android:tint="#ffffff"
+            fab:fabSize="mini"
+            fab:backgroundTint="@color/book_loading_book"/>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Hello World3"
+            android:tint="#ffffff"
+            android:id="@+id/share"
+            fab:fabSize="mini"
+            android:src="@drawable/nshare"
+            fab:backgroundTint="@color/book_loading_book"/>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Hello World3"
+            android:tint="#ffffff"
+            android:id="@+id/speak"
+            fab:fabSize="mini"
+            android:src="@drawable/speak"
+            fab:backgroundTint="@color/book_loading_book"/>
+    </terranovaproductions.newcomicreader.FloatingActionMenu>
+
+    <!-- FRAME 4 for Other Features-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/features"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:id="@+id/loadWeb"
+            android:clickable="true"
+            android:visibility="visible">
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:background="#00000000"
+            android:id="@+id/video"
+            android:visibility="visible"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="100dp"
+                android:layout_height="100dp"
+                android:clickable="true"
+                android:id="@+id/speakingAvatar"
+                android:tint="#ffffff"/>
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="70dp"
+                android:layout_height="60dp"
+                android:visibility="gone"
+                android:id="@+id/play"
+                android:src="@drawable/video_play"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="bottom"
+                android:visibility="invisible"
+                android:background="#243"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+            <VideoView
+                android:id="@+id/loadvideo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+</FrameLayout>
+
